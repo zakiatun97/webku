@@ -1,0 +1,280 @@
+/* Modern Font Stack: 
+   Menggunakan font sistem Apple/Windows yang bersih (San Francisco/Segoe UI)
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    color: #2d3436;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+/* --- NAVBAR --- */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 0.8rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #3498db;
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('gambar/gigi-hiu.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background: #3498db;
+    color: #fff;
+    padding: 12px 28px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* --- CONTROLS --- */
+.controls { padding: 3rem 5% 1rem 5%; text-align: center; }
+
+#searchBar {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#searchBar:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    margin: 5px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: #3498db;
+    color: #fff;
+    border-color: #3498db;
+}
+
+.filter-btn:hover:not(.active) {
+    background: #f1f1f1;
+}
+
+/* --- GRID & CARDS --- */
+.destinasi-container { padding: 2rem 5% 4rem 5%; }
+
+.wisata-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.card-img-wrapper {
+    overflow: hidden;
+    height: 220px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-body { padding: 20px; }
+.card-body h3 { font-size: 1.25rem; margin-bottom: 8px; color: #2c3e50; }
+.card-body p { font-size: 0.9rem; color: #636e72; margin-bottom: 10px; }
+.category-tag {
+    display: inline-block;
+    background: #e1f0fa;
+    color: #3498db;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* --- CONTACT FORM --- */
+.contact-section { padding: 4rem 5%; background: #f1f2f6; }
+.form-card {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.contact-section h2 { text-align: center; margin-bottom: 2rem; font-size: 2rem; }
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; }
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fdfdfd;
+}
+
+.btn-full { width: 100%; margin-top: 10px; }
+
+/* --- FOOTER --- */
+footer { text-align: center; padding: 3rem 0; background: #2c3e50; color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+
+/* --- RESPONSIVE & ANIMATIONS --- */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        right: 0;
+        top: 60px; /* Tinggi Header */
+        height: 100vh;
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out;
+        padding-top: 40px;
+    }
+
+    .nav-links li { margin: 15px 0; }
+    
+    .menu-toggle { display: block; }
+
+    /* Nav Slide In */
+    .nav-active { transform: translateX(0%); }
+
+    /* Burger X Animation */
+    .toggle .line1 { transform: rotate(-45deg) translate(-5px, 6px); }
+    .toggle .line2 { opacity: 0; }
+    .toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); }
+
+    .hero-content h1 { font-size: 2.2rem; }
+}

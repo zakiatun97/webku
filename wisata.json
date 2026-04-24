@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nama": "Pantai Gigi Hiu (Pegadungan)",
+    "kategori": "Pantai",
+    "lokasi": "Kecamatan Kelumbayan",
+    "deskripsi": "Gugusan batu karang tajam yang artistik di tepi samudra.",
+    "harga_tiket": 15000,
+    "rating": 4.8,
+    "fasilitas": ["Spot Foto", "Parkir Area", "Toilet"],
+    "gambar": "gigi-hiu.jpg",
+    "rekomendasi": true
+  },
+  {
+    "id": 2,
+    "nama": "Teluk Kiluan",
+    "kategori": "Alam",
+    "lokasi": "Kecamatan Kelumbayan",
+    "deskripsi": "Habitat alami lumba-lumba hidung botol di laut lepas.",
+    "harga_tiket": 20000,
+    "rating": 4.9,
+    "fasilitas": ["Sewa Perahu", "Penginapan", "Guide"],
+    "gambar": "kiluan.jpg",
+    "rekomendasi": true
+  },
+  {
+    "id": 3,
+    "nama": "Air Terjun Way Lalaan",
+    "kategori": "Air Terjun",
+    "lokasi": "Kecamatan Kota Agung Timur",
+    "deskripsi": "Air terjun bersejarah di kaki Gunung Tanggamus.",
+    "harga_tiket": 10000,
+    "rating": 4.5,
+    "fasilitas": ["Kamar Ganti", "Mushola", "Kantin"],
+    "gambar": "way-lalaan.jpg",
+    "rekomendasi": false
+  },
+  {
+    "id": 4,
+    "nama": "Bendungan Batutegi",
+    "kategori": "Edukasi",
+    "lokasi": "Kecamatan Air Naningan",
+    "deskripsi": "Bendungan terbesar dengan panorama perbukitan hijau.",
+    "harga_tiket": 5000,
+    "rating": 4.4,
+    "fasilitas": ["Rest Area", "Spot Foto", "Perahu Wisata"],
+    "gambar": "batutegi.jpg",
+    "rekomendasi": false
+  },
+  {
+    "id": 5,
+    "nama": "Taman Wisata Muara Indah",
+    "kategori": "Taman Kota",
+    "lokasi": "Kecamatan Kota Agung",
+    "deskripsi": "Ruang terbuka hijau pesisir dengan ikon patung lumba-lumba.",
+    "harga_tiket": 5000,
+    "rating": 4.2,
+    "fasilitas": ["Jogging Track", "Food Court", "Area Bermain"],
+    "gambar": "muara-indah.jpg",
+    "rekomendasi": false
+  },
+  {
+    "id": 6,
+    "nama": "Gunung Tanggamus",
+    "kategori": "Petualangan",
+    "lokasi": "Kecamatan Gisting",
+    "deskripsi": "Jalur pendakian hutan lumut yang eksotis dan menantang.",
+    "harga_tiket": 15000,
+    "rating": 4.7,
+    "fasilitas": ["Basecamp", "Pos Pendakian", "Sumber Air"],
+    "gambar": "gunung-tanggamus.jpg",
+    "rekomendasi": true
+  }
+]

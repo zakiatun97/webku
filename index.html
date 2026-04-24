@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Tanggamus - Digital Tourism Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Explore Tanggamus</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinasi">Destinasi</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <!-- Hamburger Menu Icon -->
+            <div class="menu-toggle" id="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Selamat Datang di Tanggamus</h1>
+                <p>Temukan keindahan alam tersembunyi di setiap sudut Kabupaten Tanggamus.</p>
+                <a href="#destinasi" class="btn">Mulai Jelajah</a>
+            </div>
+        </section>
+
+        <section id="controls" class="controls">
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Cari destinasi wisata...">
+            </div>
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="Pantai">Pantai</button>
+                <button class="filter-btn" data-category="Air Terjun">Air Terjun</button>
+                <button class="filter-btn" data-category="Alam">Alam</button>
+            </div>
+        </section>
+
+        <section id="destinasi" class="destinasi-container">
+            <div id="wisataGrid" class="wisata-grid">
+                <!-- Diisi oleh JavaScript -->
+            </div>
+        </section>
+
+        <section id="kontak" class="contact-section">
+            <div class="form-card">
+                <h2>Hubungi Kami</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" placeholder="Masukkan nama anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="contoh@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" rows="5" placeholder="Tuliskan pesan anda..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-full">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LKS Web Technology Tanggamus. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
